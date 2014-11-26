@@ -1,0 +1,33 @@
+{
+  "name": "express-workflow",
+  "version": "0.0.1",
+  "description": "Workflow engine for splitting complex express.js request processing handlers into meaningful chunks, connected through node.js events.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finebraincom/express-workflow.git"
+  },
+  "keywords": [
+    "express.js",
+    "workflow",
+    "web",
+    "json"
+  ],
+  "author": "Iurii Kyian <yuriy.kyyan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finebraincom/express-workflow/issues"
+  },
+  "homepage": "https://github.com/finebraincom/express-workflow",
+  "dependencies": {
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-simple-mocha": "~0.4.0",
+    "chai": "~1.10.0"
+  }
+}
