@@ -15,7 +15,7 @@ If handler provides responce in web page then should be used WebNWorkflow
 var Workflow = require('express-workflow').WebWorkflow;
 
 function handler(req, res){
-	var workflow = new Workflow
+	var workflow = Workflow(req, res);
 
 	workflow.on('task-1', function(){
 		// ...
@@ -38,7 +38,7 @@ If handler provides responce in JSON format then used JSONWorkflow
 var Workflow = require('express-workflow').JSONWorkflow;
 
 function handler(req, res){
-	var workflow = new Workflow
+	var workflow = Workflow(req, res);
 
 	workflow.on('task-1', function(){
 		// ...
