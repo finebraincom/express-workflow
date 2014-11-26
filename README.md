@@ -9,13 +9,13 @@ The original code is taken from [drywall project](http://jedireza.github.io/dryw
 Usage
 --------
 
-If handler provides responce in web page then should be used WebNWorkflow
+If handler provides responce in web page then should be used create_web_workflow
 
 ```
-var Workflow = require('express-workflow').WebWorkflow;
+var create_web_workflow = require('express-workflow').create_web_workflow;
 
 function handler(req, res){
-	var workflow = Workflow(req, res);
+	var workflow = create_web_workflow(req, res);
 
 	workflow.on('task-1', function(){
 		// ...
@@ -32,10 +32,10 @@ function handler(req, res){
 }
 ```
 
-If handler provides responce in JSON format then used JSONWorkflow
+If handler provides responce in JSON format then used create_json_workflow
 
 ```
-var Workflow = require('express-workflow').JSONWorkflow;
+var create_json_workflow = require('express-workflow').create_json_workflow;
 
 function handler(req, res){
 	var workflow = Workflow(req, res);
