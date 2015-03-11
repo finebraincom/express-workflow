@@ -1,6 +1,6 @@
 {
   "name": "express-workflow",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Workflow engine for splitting complex express.js request processing handlers into meaningful chunks, connected through node.js events.",
   "main": "lib/index.js",
   "scripts": {
